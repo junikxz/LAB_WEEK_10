@@ -24,5 +24,5 @@ interface TotalDao {
 fun delete(total: Total)
 // @Query is used to define a custom query, usually to select
     @Query("SELECT * FROM total WHERE id = :id")
-    fun getTotal(id: Int): List<Total>
+    fun getTotal(id: Long): List<Total>
 }
